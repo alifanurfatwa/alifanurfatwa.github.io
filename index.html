@@ -112,7 +112,7 @@
         class="rounded-circle img-thumbnail"
       />
       <h1 class="display-4">Alifa Nurfatwa Tsabita</h1>
-      <p class="lead">Mahasiswa Informatika at ITSK RS DR.Soepraoen</p>
+      <p class="lead">Mahasiswa Informatika at ITSK RS DR. Soepraoen</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
@@ -180,12 +180,15 @@
               data-aos-duration="2000"
             >
               <img
-                src="img/projects/1.jpg"
+                src="img/projects/1.png"
                 class="card-img-top"
                 alt="projects 1"
               />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">
+                  Poster yang menggambarkan mengenai Analisis Perangcangan Software OchaONE yang dimana menampilakan gambaran aplikasi, use case diagram, alur kerja software, data model, class diagram dan juga sequence diagram yang dimana
+                  menjelaskann mengenai aplikasi ochaOne yang merupakan aplikasi konsultasi berbasis online.
+                </p>
               </div>
             </div>
           </div>
@@ -197,12 +200,15 @@
               data-aos="zoom-in-left"
             >
               <img
-                src="img/projects/2.jpg"
+                src="img/projects/2.png"
                 class="card-img-top"
                 alt="projects 1"
               />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">
+                  OchaONE adalah aplikasi konsultasi psikologis online yang menangani berbagai permasalahan kesehatan mental, terutama di tengah meningkatnya kasus bunuh diri dan tantangan psikologis, terutama di kalangan remaja. Sebagai
+                  platform curhat langsung kepada profesional, kami memberikan kemudahan akses bagi individu yang membutuhkan bantuan dalam menghadapi kesulitan mental.
+                </p>
               </div>
             </div>
           </div>
@@ -229,12 +235,15 @@
               data-aos-duration="2000"
             >
               <img
-                src="img/projects/4.jpg"
+                src="img/projects/4.png"
                 class="card-img-top"
                 alt="projects 4"
               />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">
+                  Apoklik merupakan platform digital yang memungkinkan pengguna untuk membeli obat-obatan dan produk kesehatan lainnya dari apotek resmi terdaftar. Aplikasi ini menawarkan berbagai macam fitur dan manfaat yang memudahkan
+                  pengguna untuk mendapatkan obat yang mereka butuhkan tanpa harus keluar rumah.
+                </p>
               </div>
             </div>
           </div>
@@ -245,12 +254,12 @@
               data-aos-duration="2000"
             >
               <img
-                src="img/projects/5.jpg"
+                src="img/projects/5.png"
                 class="card-img-top"
                 alt="projects 5"
               />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Website ini merupakan website pertama saya yang dibuat menggunakan bootstarp framework</p>
               </div>
             </div>
           </div>
@@ -279,7 +288,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-3">
-            <a href="">
+            <a href="#">
               <img
                 src="img/galeri/thumbnail/1.jpg"
                 alt="gambar1"
@@ -288,7 +297,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="">
+            <a href="#">
               <img
                 src="img/galeri/thumbnail/2.jpg"
                 alt="gambar2"
@@ -297,7 +306,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="">
+            <a href="#">
               <img
                 src="img/galeri/thumbnail/3.jpg"
                 alt="gambar3"
@@ -306,7 +315,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="">
+            <a href="#">
               <img
                 src="img/galeri/thumbnail/4.jpg"
                 alt="gambar4"
@@ -315,7 +324,7 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="">
+            <a href="#">
               <img
                 src="img/galeri/thumbnail/5.jpg"
                 alt="gambar5"
@@ -324,9 +333,27 @@
             </a>
           </div>
           <div class="col-md-3">
-            <a href="">
+            <a href="#">
               <img
                 src="img/galeri/thumbnail/6.jpg"
+                alt="gambar6"
+                class="img-fluid gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/galeri/thumbnail/7.jpg"
+                alt="gambar6"
+                class="img-fluid gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/galeri/thumbnail/8.jpg"
                 alt="gambar6"
                 class="img-fluid gallery-img"
               />
@@ -460,6 +487,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       const galleryImage = document.querySelectorAll('.gallery-img');
+
       galleryImage.forEach((img, i) => {
         img.dataset.aos = 'fade-down';
         img.dataset.aosDelay = i * 100;
@@ -470,14 +498,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
     <script>
-            gsap.registerPlugin(TexPlugin);
-            gsap.from('.jumbotron img', {
-      duration:2.5,
-      ease: "circ.out",
-      y: -250
+      gsap.registerPlugin(TexPlugin);
+      gsap.to('.lead', { duration: 2, delay: 1.5, text: ' Mahasiswa Informatika at ITSK RS DR. Soepraoen' });
+      gsap.from('.jumbotron img', {
+        duration: 1,
+        rotateY: 360,
+        opacity: 0,
       });
-            gsap.from('.navbar', {duration:1.5, y:'-100%', opacity:0, ease:'bounce'});
-            gsap.from('.display-4', { duration:1, x:-50. opacity:0, delay:0.5, ease:'bounce'})
+      gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' });
+      gsap.from('.display-4', { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
     </script>
 
     <script>
